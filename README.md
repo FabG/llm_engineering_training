@@ -10,6 +10,32 @@ This repo includes notes and code from Udememy course:
 See also [Github repo](https://github.com/ed-donner/llm_engineering/tree/main)
 
 
+### Install
+Install python v3.11.9 => https://www.python.org/
+Optionally add the new python version to your path and also as an alias
+in .bash_profile:
+```
+alias virtualenv='python -m venv'
+alias python=/Library/Frameworks/Python.framework/Versions/3.11/bin/python3
+```
+And check:
+```
+$ python --version
+Python 3.11.9
+```
+
+Set uyp your virtual environemnt and activate it
+```
+virtualenv llm_training
+source llm_training/bin/activate
+```
+
+Install the required packages: 
+``` 
+pip install -r requirements.txt
+```
+
+
 ### Trying out Llama 3.2
 Download [Ollama](https://ollama.com/download)
 In terminal, run:  
@@ -73,3 +99,12 @@ That sounds natural.
 
 ¡Hola! Estoy bien, gracias. ¿Cómo estás? ¿Cuál has hecho esta noche?
 ```
+
+This course's journey towards mastery LLM will focus on:
+- Frontier models with UIs, Agentization and Multi-modality
+- Open source with Hugging Face
+- Selecting LLMs and code generation
+- RAG and questions and answering
+- Fine tuning a frontier model
+- Fine tuning an Open Source model
+- Fully autnomous agentic ai solutions, with 7 agents collaborating (Scan internet for things, sned push notifications,...)
